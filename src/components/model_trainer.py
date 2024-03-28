@@ -49,12 +49,13 @@ class ModelTrainer:
             params={
                 "Decision Tree": {
                     'criterion':['squared_error', 'friedman_mse', 'absolute_error', 'poisson'],
+                    'max_depth': [3,5,8],
                     # 'splitter':['best','random'],
                     # 'max_features':['sqrt','log2'],
                 },
                 "Random Forest":{
                     # 'criterion':['squared_error', 'friedman_mse', 'absolute_error', 'poisson'],
-                    
+                    'max_depth': [3,5,8],
                     # 'max_features':['sqrt','log2',None],
                     'n_estimators': [8,16,32,64,128,256]
                 },
